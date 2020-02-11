@@ -24,6 +24,7 @@
 
     <properties>
         <dubbo.version>2.7.2</dubbo.version>
+        <dubbo-kryo.version>2.7.2</dubbo-kryo.version>
         <dubbo-actuator.version>2.7.1</dubbo-actuator.version>
         <alibaba-spring-context-suppert.version>1.0.2</alibaba-spring-context-suppert.version>
 
@@ -83,6 +84,12 @@
                 <groupId>com.alibaba.spring</groupId>
                 <artifactId>spring-context-support</artifactId>
                 <version>${alibaba-spring-context-suppert.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-serialization-kryo</artifactId>
+                <version>${dubbo-kryo.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
